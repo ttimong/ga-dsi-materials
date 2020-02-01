@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<center>
+    {{ name }}, your excitement level is {{ lvl }}.
+    {% if  lvl|int <= 5  %}
+    Shame.<br><br>
+    <img src="https://media.giphy.com/media/c2YyNySJ1CbFC/200.gif">
+
+    {% elif lvl|int > 5 and lvl|int < 50 %}
+    Meh. Try harder.<br><br>
+    <img src="https://media0.giphy.com/media/11lLn6lwsdicLK/200.gif">
+
+    {% elif lvl|int > 9000 %}
+    OVER 9000!!<br><br>
+    <img src="http://i0.kym-cdn.com/photos/images/original/000/845/401/195.gif">
+
+    {% else %}
+    That's fantastic. You are a star.<br><br>
+    <img src="https://media4.giphy.com/media/arm7b1hJrw1BS/200.gif">
+    {% endif %}
+</center>
+</body>
+</html>
